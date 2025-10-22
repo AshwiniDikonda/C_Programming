@@ -1,0 +1,34 @@
+// Write a program which accept one number user and print that number of even numbers on screen
+
+#include<stdio.h>
+
+void PrintEven(int iNo)
+{
+    if(iNo < 0)
+    {
+        return;
+    }
+
+    int iCount = 0;
+    int i = 0;
+    for(i = 1; iCount < iNo; i++)
+    {
+        if(i%2 == 0)
+        {
+            printf("%d ", i);
+            iCount++;
+        }
+    }
+
+}
+
+int main()
+{
+    int iValue = 0;
+    printf("Enter number: ");
+    scanf("%d", &iValue);
+
+    PrintEven(iValue);
+
+    return 0;
+}
